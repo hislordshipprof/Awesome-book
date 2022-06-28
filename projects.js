@@ -67,18 +67,18 @@ document.querySelector('#form').addEventListener('submit', (e) => {
   addBookToStore(book);
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const books = createBooks();
-  addBookToUI(books);
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//   const books = createBooks();
+//   addBookToUI(books);
+// });
 
-// Event Remove book
-document.querySelector('.container').addEventListener('click', (e) => {
-  // remove from ui
-  removeBookUI(e.target);
+// // Event Remove book
+// document.querySelector('.container').addEventListener('click', (e) => {
+//   // remove from ui
+//   removeBookUI(e.target);
 
-  // remove from local storage
-  removeBook(
-    e.target.previousElementSibling.previousElementSibling.textContent,
-  );
-});
+//   // remove from local storage
+//   removeBook(
+//     e.target.previousElementSibling.previousElementSibling.textContent,
+//   );
+// });
