@@ -1,4 +1,4 @@
-import StoreBook from "./StoreBook.js";
+import StoreBook from './StoreBook.js';
 // class UiPage
 export default class UiPage {
   // display books
@@ -13,9 +13,9 @@ export default class UiPage {
   // add book to UiPage
 
   static addBookToUiPage(book) {
-    const container = document.querySelector(".container");
+    const container = document.querySelector('.container');
 
-    const ul = document.createElement("ul");
+    const ul = document.createElement('ul');
 
     ul.innerHTML = `
       <li>${book.title}</li>
@@ -23,11 +23,11 @@ export default class UiPage {
       <button class="delete" type="button">Remove</button>
       <hr />
     `;
-    container.insertBefore(ul, document.querySelector("#form"));
+    container.insertBefore(ul, document.querySelector('#form'));
   }
 
   static removeBook(el) {
-    if (el.classList.contains("delete")) {
+    if (el.classList.contains('delete')) {
       el.parentElement.remove();
     }
   }
