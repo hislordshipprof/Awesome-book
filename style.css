@@ -40,7 +40,7 @@ a {
   display: flex;
 }
 
-.active>a {
+.active > a {
   color: rgb(64, 64, 248);
 }
 
@@ -74,7 +74,7 @@ header {
   padding: 0 5px;
 }
 
-.nav-links>a:hover {
+.nav-links > a:hover {
   color: rgb(64, 64, 248);
 }
 
