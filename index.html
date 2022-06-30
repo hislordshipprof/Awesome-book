@@ -4,22 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <script type="module" src="projects.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Awesome Books</title>
   </head>
   <body>
-    <main>
-      <div class="container">
-        <h1 class="title">Awesome books</h1>
-        <form action="#" id="form">
-          <input type="text" name="title" id="title" placeholder="title" /><br><br>
-
-          <input type="text" name="auhtor" id="author" placeholder="author" /><br><br>
-
+   
+      <header>
+        <nav class="nav-bar">
+          <a href="/" class="logo">Awesome Books</a>
+          <ul class="nav-items">
+            <li class="nav-links list-book active"><a href="">List</a></li>
+            <li class="nav-links add-new"><a href="">Add new</a></li>
+            <li class="nav-links contact-link"><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <p class="date"></p>
+      </header>
+      <section id="view-book" class="book-list-wrapper">
+        <div class="book-list">
+          <h1 class="title">All awesome books</h1>
+          <div class="container">
+          </div>
+        </div>
+      </section>
+      <section id="add-book" class="content-container display-none">
+        <h2>Add a new book</h2>
+        <form action="#" id="form"> 
+          <input type="text" name="title" id="title" placeholder="Title" />
+        
+          <input type="text" name="auhtor" id="author" placeholder="Author" />
+        
           <button type="submit">Add</button>
         </form>
-      </div>
-    </main>
+      </section>
+      <section id="contact" class="content-container display-none">
+          <div class="contact-container">
+            <h2>
+              Contact information
+            </h2>
+            <p>For any questions or information <br>You can reach out to us!</p>
+            <ul class="contact-info">
+              <li class="contact-info-text">E-mail: mail@mail.com</li>
+              <li class="contact-info-text">Phone number : 233248083847</li>
+              <li class="contact-info-text">Address:Accra-Ghana</li>
+            </ul>
+        </div>
+      </section>
+      
+    <footer>
+      <p class="footer-paragraph">Copyright Microverse</p>
+    </footer>
+
+
+    <script type="module" src="projects.js"></script>
   </body>
 </html>
